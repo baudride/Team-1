@@ -1,4 +1,4 @@
-from data_collection import
+from data_collection import return_gold
 
-
-gold_pd =
+gold_pd = return_gold()
+print(gold_pd)
