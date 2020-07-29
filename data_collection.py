@@ -1,13 +1,15 @@
 # Initial Imports
-import pandas as pd
-import hvplot.pandas
-from pathlib import Path
 import os
-import plotly.express as px
-from dotenv import load_dotenv
-import numpy as np
-import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+from pathlib import Path
+from dotenv import load_dotenv
+
+import hvplot.pandas
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import plotly.express as px
+
 
 # Read Data
 Gold_path = Path("Resources/gold_reserves_annual_quarterly_monthly.csv")
@@ -22,6 +24,11 @@ gold.head()
 # Reorder the columns by creating a new DataFrame
 gold = gold[['Time Period','tonnes']]
 gold.head()
+
+#return gold dataframe
+def return_gold():
+    return(gold)
+
 
 # Remove Couontry names doesnt refer to a real country (inplace=True)
 gold_top = gold.drop(['Advanced Economies','Sub-Saharan Africa',
