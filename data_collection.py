@@ -2,7 +2,7 @@
 import os
 from datetime import datetime, timedelta
 from pathlib import Path
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 import hvplot.pandas
 import matplotlib.pyplot as plt
