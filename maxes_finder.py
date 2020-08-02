@@ -5,6 +5,8 @@ gold_pd = return_gold()
 
 def find_max():
     max = 0
+    max2 = 0
+    max3 = 0
     index = 0
     for i in range(len(gold_pd)):
         if max < gold_pd.iloc[i][1]:
