@@ -26,7 +26,7 @@ gold = gold[['Time Period','tonnes']]
 gold.head()
 
 # Remove Couontry names doesnt refer to a real country (inplace=True)
-gold_top = gold.drop(['Advanced Economies','Sub-Saharan Africa',
+gold = gold.drop(['Advanced Economies','Sub-Saharan Africa',
 'Central African Economic and Monetary Community','CIS',
 'Emerging and Developing Asia','Emerging and Developing Europe',
 'Emerging and Developing Countries', 'Europe', 'Euro Area',
@@ -35,4 +35,4 @@ gold_top = gold.drop(['Advanced Economies','Sub-Saharan Africa',
 
 #return gold dataframe
 def return_gold():
-    return(gold_top)
+    return(gold)
