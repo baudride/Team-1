@@ -1,3 +1,3 @@
 # Team-1
 
-Baudride & Dmitry
+Baudride,Dmitry & Daniel
